@@ -331,11 +331,14 @@ class MessengerScreen extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        "Name Two",
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: TextStyle(color: Colors.white,fontSize: 16,fontWeight: FontWeight.bold),
+                      SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Text(
+                          "Name TwoName TwoName TwoName TwoName TwoName TwoName Two",
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: TextStyle(color: Colors.white,fontSize: 16,fontWeight: FontWeight.bold),
+                        ),
                       ),
                       Row(
                         children: [
